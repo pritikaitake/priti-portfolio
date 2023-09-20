@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+
+{% block title %} | Register Account {% endblock %}
+
+{% block content %}
+  <!-- inner banner -->
+  <div class="inner-banner-w3ls py-5" id="home">
+      <div class="container py-xl-5 py-lg-3">
+          <!-- register  -->
+          <div class="modal-body mt-md-2 mt-5">
+              <h3 class="title-w3 mb-5 text-center text-wh font-weight-bold">Register Now</h3>
+              <!-- Alerts -->
+              {% include 'partials/_alerts.html' %}
+              <form action="{% url 'register' %}" method="POST">
+                  {% csrf_token %}
+                  <div class="form-group">
+                      <label for="first_name" class="col-form-label">First Name</label>
+                      <input type="text" name="first_name" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="last_name" class="col-form-label">Last Name</label>
+                      <input type="text" name="last_name" class="form-control" required>
+                    </div>
+                <div class="form-group">
+                  <label for="username" class="col-form-label">Username</label>
+                  <input type="text" name="username" class="form-control" required>
+                </div>
+                <div class="form-group">
+                  <label for="email" class="col-form-label">Email</label>
+                  <input type="email" name="email" class="form-control" required>
+                </div>
+                <div class="form-group">
+                  <label for="password2" class="col-form-label">Password</label>
+                  <input type="password" name="password" class="form-control" required>
+                </div>
+                <div class="form-group">
+                  <label for="password" class="col-form-label">Confirm Password</label>
+                  <input type="password" name="password2" class="form-control" required>
+                </div>
+                <input type="submit" value="Register" class="btn btn-secondary btn-block">
+              </form>
+          </div>
+          <!-- //register -->
+      </div>
+  </div>
+  <!-- //inner banner -->
+
+  {% endblock %}

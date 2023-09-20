@@ -1,0 +1,105 @@
+.banner wrapper img{
+	height:400px;
+	border:rounded-bottom;
+}
+.members-wrapper-info p{
+	margin-right:150px;
+	margin-left:150px;
+	padding-top:10px;
+}
+
+
+.quick-link ul li{
+	list-style-type:none;
+	}
+
+.quick-link a{
+	text-decoration:none;
+	}
+
+.contact-detail ul li{
+	list-style-type:none;
+	}
+	
+.contact-detail a{
+	text-decoration:none;	
+	}
+	
+.bank-detail ul li{
+	list-style-type:none;
+}
+
+.icon-box img{
+	height:auto;
+	width:auto;
+	padding:40px;
+	border:rounded;
+	}
+.founder-member .service-column{
+		border:1px solid;
+		border-radius:45px;
+		padding:40px;
+		border-color:gray;
+		padding-left:40px;
+	}
+
+.service-column a{
+	text-decoration:none;
+	}
+.service-column a h6{
+		color:green;
+    }
+	
+.membership {
+	border:0px solid;
+		border-radius:45px;
+		padding:30px;
+		border-color:gray;		
+	}
+.notice-card{
+	
+	 border-radius: 4px;
+}
+.Events-wrapper card{
+	padding:100px;
+}	
+.card-amma{
+	border-radius:53px;
+	background-color:white;
+	padding-left:35px;
+	padding-right:35px;
+	width:100%;
+	}
+.become-member-content{
+	width:100%;
+	}
+.become-member-wrapper .container{
+	border-radius:35px;
+	position:relative;
+	background-color:#adb5bd;
+	margin-top:50px;
+	margin-bottom:50px;
+	}
+.become-button-group{
+	background-color:white;
+	border-radius:82px;
+	border:1px solid white;
+	right:73px;
+	
+}
+@media (min-width: 1200px){
+	.Over{
+	background-color:#198754;
+	position:absolute;
+	
+	height:207px;
+	border-radius:60px;
+	width:551px;
+	
+	}
+.become-button-group{
+	position:relative;
+	margin-top:63px;
+}
+
+}

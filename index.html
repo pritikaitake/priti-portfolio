@@ -1,0 +1,497 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Priti Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="css/style.css" rel="stylesheet">
+	<style>
+	.error {
+			color:red;
+		}
+		
+	.banner-main{
+	background: url('./images/coding-website-background.jpg')no-repeat center;
+	background-size:cover;
+	height:700px;
+	width:100%;
+	background-attachment:fixed;
+	background-color:rgba(50,53,79,0.7);
+	background-blend-mode:overlay;
+	    }
+
+	.banner-content h1{
+	position:relative;
+	padding-top:300px;
+	}
+	.banner-content{
+	  transition: transform .2s;
+	 	  }
+	   .banner-content:hover{
+	    transform: scale(1.5);
+       transform: scale(1.5);
+       transform: scale(1.5); 
+	   }
+	   
+	.personal-info p{
+	font-size:17px;
+	}
+		
+	#my-resume{
+	background:url('images/215-2154046_transparent-geometric-background-png.png')no-repeat center;
+	background-attachment:fixed;
+	background-size:cover;
+	}
+	
+	.service-box a{
+	text-decoration:none;
+	}
+	.service-column{
+	height:240px;
+	width:auto;
+	}
+	.service-box{
+	  transition: transform .2s;
+	  }
+	   .service-box:hover, i:hover{
+	   transform: scale(0.7);
+       transform: scale(0.7);
+       transform: scale(0.7); 
+	   color:red;
+	   }
+	   #services h1{
+	   color:#154360;
+	     text-shadow: 4px 4px 5px #000000;
+	   }
+	   
+	#portfolio a{
+	text-decoration:none;
+	text-align:center;
+	color:black;
+	}
+	.portfolio-data{
+	position:relative;
+	}
+	.portfolio-data:hover  .website-name{
+		  display:block;
+		  font-size:40px;
+		  color: white;
+		  text-shadow: 2px 2px 4px #000000;
+	  }
+	  .portfolio-data:hover{
+	  color:light;
+	  }
+	  
+	   .portfolio-data{
+	  transition: transform .2s;
+	 	  }
+	   .portfolio-data:hover{
+	   transform: scale(1.2);
+       transform: scale(1.2);
+       transform: scale(1.2); 
+	   color:red;
+	   }
+	   
+	.website-info {
+		  position:absolute;
+		   width:100%;
+		  left:0;
+		  text-align:center;
+		  font-size:30px;
+		  color:#154360;
+		  font-family: 'Brush Script MT', cursive;
+		
+	  }
+	  .website-name{
+		  
+		  position:absolute;
+		  bottom:30%;
+		  width:100%;
+		  left:0;
+		  text-align:center;
+		  display:none;
+		  color:red; 
+	  }
+	  
+	   
+	   .portfolio h1{
+	   color:#154360;
+	     text-shadow: 4px 4px 5px #000000;
+	   }
+	   
+	   .contact h4 i{
+	padding:20px;
+	background-color:white;
+	border-radius:60%;
+	}
+	.contact p{
+	padding-left:75px;
+	}
+	.contact{
+	background:url('images/contact-us-bg.jpg')no-repeat center;
+	background-attachment:fixed;
+	background-size:cover;
+	}
+	</style>
+  </head>
+  <body>
+  <header>
+
+    <nav class="navbar navbar-expand-lg bg-dark p-4  fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand text-white ms-5" href="#my-resume">Priti Kaitake</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	  
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#about-me">About</a>
+        </li>
+		<li class="nav-item">
+          <a class="nav-link text-white" href="#my-resume">Resume</a>
+        </li>
+		<li class="nav-item">
+          <a class="nav-link text-white" href="#services">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#portfolio">Portfolio</a>
+        </li>
+		<li class="nav-item">
+          <a class="nav-link text-white" href="#contact-form">Contact</a>
+        </li>
+      </ul>
+     
+    </div>
+  </div>
+</nav>
+</header>
+	<section class="banner-main">
+		<div class="banner-content">
+		<h1 class="d-flex justify-content-center text-white">Priti Kaitake</h1>
+		<h5 class="d-flex justify-content-center text-white">I'm a Full Stack Python Developer</h5>
+		</div>
+	</section>
+	<section id="about-me">
+		<div class="container pb-5">
+			<div class="row">
+			<h1 class="text-center p-5">ABOUT ME</h1>
+				<div class="col-md-6">
+					<div class="row">
+						<div class="col-md-6">
+						<img src="images/priti.jpg" width="auto" height="350px">
+						</div>
+						<div class="col-md-6">
+						<div class="personal-info">
+						<p class="pt-3"><strong>Name:</strong> Priti Sarangdhar Kaitake</p>
+						<p><strong>Profile:</strong> full stack Python developer</p>
+						<p><strong>Email:</strong> pritikaitake@gmail.com</p>
+						<p><strong>Phone:</strong> +91 7447473875</p>
+						<p><strong>Age:</strong> 25</p>
+						<p><strong>Degree:</strong> Bachelors</p>
+						<p><strong>Website:</strong> -------</p>
+						<p><strong>City:</strong> Nashik, Maharashtra.</p>
+						
+						</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<h6 class="fs-6 pt-4 pb-1">HTML<span style="float:right;">100%</span></h6>
+					<div class="progress" style="height: 10px;">
+					  <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+					</div>
+					<h6  class="fs-6 pt-4 pb-1">CSS<span style="float:right;">90%</span></h6>
+					<div class="progress" style="height: 10px;">
+					  <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+					</div>
+					<h6  class="fs-6 pt-4 pb-1">JAVASCRIPT, JQUERY<span style="float:right;">75%</span></h6>
+					<div class="progress" style="height: 10px;">
+					  <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div></div>
+					  
+					  <h6  class="fs-6 pt-4 pb-1">MySQL<span style="float:right;">70%</span></h6>
+					<div class="progress" style="height: 10px;">
+					  <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div></div>
+					  <h6  class="fs-6 pt-4 pb-1">PYTHON, DJANGO<span style="float:right;">70%</span></h6>
+					<div class="progress" style="height: 10px;">
+					  <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="my-resume">
+		<div class="container  pb-4">
+			<div class="row">
+			<h1 class="p-5 text-center">CHECK MY RESUME</h1>
+				<div class="col-md-6">
+				
+					<h3 class="pb-3">SUMARY</h3>
+					<h4 class="fs-5 text-secondary">PRITI KAITAKE</h4>
+					<p class="pe-4"><em>Familiar with Python. Well-versed in numerous programming languages 
+					including HTML5, CSS3, Bootstrap5, JavaScript, Jquery, MySql, Python, Django.</em></p>
+					<ul>
+					<li class="pt-2"> N-53, SF/4, 36/6, Sarweshwar chowk, Uttamnagar, Nashik, 422001</li>
+					<li class="pt-2"> +91 7447473875</li>
+					<li class="pt-2"> pritikaitake@gmail.com</li>
+					</ul>
+				</div>
+				<div class="col-md-6">
+					<h3 class="pb-3 ">EDUCATION</h3>
+					<div class="engineer">
+					<p class="fs-5 text-secondary">BACHELOR'S OF ENGINEERING</p>
+					<h6>2017-2022</h6>
+					<p><em>K.V.N.college of Engineering, Nashik</em></p>
+					<p>Completed four years bachelor's degree</p>
+					</div>
+					<div class="diploma">
+					<p class="fs-5 text-secondary">DIPLOMA OF ENGINEERING</p>
+					<h6>2015-2017</h6>
+					<p><em>A.D.P.P.C. college of Polytechnic, Ahamadnagar</em></p>
+					</div>
+					<div class="web developer">
+					<p class="fs-5 text-secondary">FULL STACK PYTHON DEVELOPER</p>
+					<h6>2022(6 M)</h6>
+					<p><em>Esenceweb IT Institute</em></p>
+					<p>Completed six month course on full stack python development</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="services">
+		<div class="container">
+		<div class="row">
+		<h1 class="text-center mt-5">MY SERVICES</h1>
+			 <div class="col-md-4 service-box">
+			 
+				<div class="service-column shadow border border-none mt-5 me-1">
+				<div class="text-center mb-4 mt-3"><i class="fa fa-dribbble  p-3  bg-light" style="font-size:30px"></i></div>
+					<a href="#">
+					<h6 class="text-center text-dark mb-3">Front-End Development</h6>
+						<p class="text-dark text-center">Front end development manages everything that users visually see first in their browser or application.</p>								
+					</a>
+				</div>
+			 </div>
+			 <div class="col-md-4 service-box">
+				<div class="service-column shadow border border-none mt-5 me-1">
+				<div class="text-center mb-4 mt-3 "><i class="fa fa-file-zip-o  p-3  bg-light" style="font-size:30px"></i></div>
+					<a href="#">
+						<h6 class="text-center text-dark mb-3">Back-End Development</h6>
+						<p class="text-dark text-center">Back end development refers to the server side of an application and everything that communicates between the database and the browser.</p>								
+					</a>
+				</div>
+			 </div>
+
+			 <div class="col-md-4 service-box">
+				<div class="service-column shadow border border-none mt-5 me-1">
+				<div class="text-center mb-4 mt-3"><i class="fa fa-institution p-3  bg-light" style="font-size:30px"></i></div>
+					<a href="#">
+						<h6 class="text-center text-dark mb-3">Full Stack Software Development</h6>
+						<p class="text-dark text-center">This involves works with both the front and back ends of a website or application.</p>								
+					</a>
+				</div>
+			 </div>
+			 <div class="col-md-4 service-box">
+				<div class="service-column shadow border border-none mt-5 me-1">
+				<div class="text-center mb-4 mt-3"><i class="fa fa-globe p-3  bg-light" style="font-size:30px"></i></div>
+					<a href="#">
+						<h6 class="text-center text-dark mb-3">Python Developement</h6>
+						<p class="text-dark text-center">Python Software Development is intended to meet the needs of an organization that already exists and a system (maybe manual) that is in place.</p>								
+					</a>
+				</div>
+			 </div>
+			 <div class="col-md-4 service-box">
+				<div class="service-column shadow border border-none mt-5 me-1">
+				<div class="text-center mb-4 mt-5"><i class="fa fa-desktop p-3  bg-light" style="font-size:24px"></i></div>
+					<a href="#">
+						<h6 class="text-center text-dark mb-3">Web Development</h6>
+						<p class="text-dark text-center">Building and maintenance of websites.</p>								
+					</a>
+				</div>
+			 </div>		
+			 			 <div class="col-md-4 service-box">
+				<div class="service-column shadow border border-none mt-5 me-1">
+				<div class="text-center mb-4 mt-5"><i class="fa fa-window-restore p-3  bg-light" style="font-size:24px"></i></div>
+					<a href="#">
+						<h6 class="text-center text-dark mb-3">Web Designing</h6>
+						<p class="text-dark text-center">Designing and Building of websites.</p>								
+					</a>
+				</div>
+			 </div>		
+			 </div>
+		</div>
+	</section>
+	
+	<section id="portfolio">
+		<div class="container mt-5 mb-5">
+		<div class="row">
+		<h1 class="text-center">MY WORKS</h1>
+			<div class="col-md-4 card portfolio-data m-5 shadow-lg border border-none" style="width: 18rem;">
+			  <a href="mukesh bhatia/home.html" ><img src="images/Invitation-page-001 (1).jpg" class="card-img-top pt-3" height="300" alt="...">
+			  <div class="card-body website-info">
+				<p class="card-text">Mukesh Bhati</p>
+    	    </div>
+			<div class="website-name">
+			<p class="card-title">Mukesh Bhatia</p>
+			</div></a>
+			</div>
+			<div class="col-md-4 card portfolio-data m-5 shadow-lg border border-none" style="width: 18rem;">
+			  <a href="krustycone/home.html" ><img src="images/c03f17ee4e4f99befeaa4335a79e8a96.avif" class="card-img-top pt-3" height="300" alt="...">
+			  <div class="card-body website-info">
+			  <p class="card-text">Krustycone</p>
+    	    </div>
+			<div class="website-name">
+			<p class="card-title">Krustycone</p>
+			</div></a>
+			</div>
+			<div class="col-md-4 card portfolio-data m-5 shadow-lg border border-none" style="width: 18rem;">
+			  <a href="Dento/home.html" ><img src="images/dento-free-template.jpg (2).webp" class="card-img-top pt-3" height="300" alt="...">
+			  <div class="card-body website-info">
+				<p class="card-text">Dento</p>
+				</div>
+				<div class="website-name">
+				<p class="card-title">Dento</p>
+				</div></a>
+			</div>
+			<div class="row">
+				<div class="col-md-4 card portfolio-data m-5 shadow-lg border border-none" style="width: 18rem;">
+			  <a href="amma association/home.html " ><img src="images/Goa Work shop (AMMA)-13 NOV 22 (1)_page-0001.jpg" class="card-img-top pt-3" height="300"alt="...">
+			  <div class="card-body website-info">
+				<p class="card-text">Amma association</p>
+    	    </div>
+			<div class="website-name">
+			<p class="card-title">Amma association</p>
+			</div></a>
+			</div>
+				<div class="col-md-4 card portfolio-data m-5 shadow-lg border border-none" style="width: 18rem;">
+			  <a href="https://drive.google.com/drive/folders/1G1TNghJeFRaLPugYqxg4-s2JwpRGa6th?usp=sharing" ><img src="images/real-estate-video-marketing-1920x1080-1.jpg" class="card-img-top pt-3" height="300"alt="...">
+			  <div class="card-body website-info">
+			  <p class="card-text">Real-Estate(Project)</p>
+    	    </div>
+			<div class="website-name">
+			<p class="card-title">Real-Estate</p>
+			</div></a>
+			</div>
+			</div>
+		</div>
+		</div>
+	</section>
+	<section class="contact ">
+		<div class="container mt-5">
+			<div class="row ">
+				<h1 class="text-center text-white mt-5 mb-5">CONTACT ME</h1>
+				<div class="col-md-6 mt-3">
+					<div class="bg-light p-3 me-3">
+					<h4><i class="fa fa-map-marker" style="font-size:24px"></i><span class="ms-3">My Address</span></h4>
+					<p>Sarweshwar chowk, Uttamnagar, Nashik</p>
+					
+					</div>
+				</div>
+				<div class="col-md-6 mt-3">
+					<div class="bg-light p-3 me-3">
+					<h4><i class='fa fa-share-alt' style='font-size:24px'></i><span class="ms-3">Social Profiles</span></h4>
+					<a href="#"><p><i class="fa fa-twitter pe-3 text-primary" style="font-size:24px"></i></a>
+					<a href="#"><i class="fa fa-facebook-f pe-3 text-primary" style="font-size:24px"></i></a>
+					<a href="#"><i class="fa fa-google-plus pe-3 text-primary" style="font-size:24px"></i></a>
+					<a href="#"><i class="fa fa-linkedin pe-3 text-primary" style="font-size:24px"></i></p></a>
+					
+					</div>
+				</div>
+				<div class="col-md-6 mt-3">
+					<div class="bg-light p-3 me-3 ">
+					<h4><i class="fa fa-envelope-o" style="font-size:24px"></i><span class="ms-3">Email Me</span></h4>
+					<p> pritikaitake@gmail.com</p>
+					
+					</div>
+				</div>
+				<div class="col-md-6 mt-3">
+					<div class="bg-light p-3 me-3">
+					<h4><i class="fa fa-phone" style="font-size:24px"></i><span class="ms-3">Call Me</span></h4>
+					<p>+91 7447473875</p>
+					
+					</div>
+				</div>
+			</div>	
+			
+			
+			<form method="post" id="contact-form">
+				<div class="row me-2 mt-5">
+					<div class="col-md-6 col-sm-12 mb-3">
+					<label for="exampleInputEmail1" class="form-label text-white">Email Address<span class="text-danger">*</span></label>
+					<input type="text" class="form-control" name="email">
+				</div>
+				<div class="col-md-6 col-sm-12 mb-3">
+					<label for="exampleInputEmail1" class="form-label text-white">Password<span class="text-danger">*</span></label>
+					<input type="text" class="form-control" name="password">
+				</div>
+				<div class="col-md-12 col-sm-12 mb-3">
+					<label for="exampleInputEmail1" class="form-label text-white">Subject<span class="text-danger">*</span></label>
+					<input type="text" class="form-control" name="subject">
+				</div>
+				<div class="col-md-12 col-sm-12 mb-3">
+					<label for="exampleInputEmail1" class="form-label text-white">Message<span class="text-danger">*</span></label>
+					<textarea type="text" class="form-control" name="message"></textarea>
+				</div>
+				
+			</div>
+			<div class="text-center"><button type="submit" class="btn btn-primary mb-5" onclick="contactCheck()">Submit</button>
+		</form>
+			
+		</div>		
+	</section>
+	
+	<script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+ <script>
+			function contactCheck(){
+			$('#contact-form').validate({
+					rules:{
+						email:{
+							required:true
+						},
+						password:{
+							required:true,
+							},
+						subject:{
+							required:true
+						},	
+						message:{
+							required:true
+						}
+						
+					},
+					messages:{
+						email:{
+							required:'Please enter your email'
+						},
+						password:{
+							required:'Please enter your password'
+						},
+						subject:{
+							required:'Please enter your subject'
+						},
+						message:{
+							required:'Please enter your message'
+						}
+										
+					}
+						
+			});
+			
+			}
+
+</script>
+  </body>
+</html>

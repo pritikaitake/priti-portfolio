@@ -1,0 +1,129 @@
+header {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+header .dropdown-link {
+    position: relative;
+}
+/*header .sub-menu {
+    position: absolute;
+    left: 0;
+    top: 30px;
+    width: 250px;
+    display: none !important;
+}*/
+/*header .dropdown-link:hover .sub-menu {
+    display: block !important;
+}*/
+header .navbar-brand img {
+    width: 40px;
+    margin-right: 5px;
+}
+header .navbar-brand h5 {
+    font-weight: var(--font-weight-bold);
+}
+header .nav-link {
+    font-weight: var(--font-weight-medium);
+    color: var(--black);
+}
+header .navbar-nav li {
+    margin-left: 0;
+}
+header .navbar-expand-md .navbar-collapse {
+    width: 100%;
+}
+header .navbar ul {
+    /*display: flex;*/
+    justify-content: end;
+    width: 100%;
+}
+header .mobile-menu .navbar-brand {
+    width: 75px;
+}
+header .modal-backdrop.show {
+     opacity: 0; 
+}
+/*header .modal-backdrop {
+     z-index: 99999999;
+}*/
+header .offcanvas {
+    width: 80% !important;
+}
+header .offcanvas.offcanvas-start {
+    z-index: 99999999;
+}
+header .offcanvas-body {
+    padding: 0;
+}
+header .mobile-menu .navbar-nav li {
+    padding: 10px 15px;
+    background: var(--secondary-color);
+    margin-bottom: 2px;
+}
+header .mobile-menu .navbar-nav li ul li {
+    background: transparent;
+}
+/*-----------------------------------footer----------------------------*/
+
+.footer-logo-column img {
+    width: 80px;
+}
+.footer-column h6 {
+    margin-bottom: 20px;
+}
+.footer-column ul li {
+    margin-bottom: 8px;
+}
+.footer-column ul li a {
+    color: var(--black);
+}
+footer p {
+    color: var(--black);
+}
+.footer-logo-column i {
+    font-size: var(--font-h4);
+    margin-right: 18px;
+}
+.footer-logo-column ul {
+    margin-top: 15px;
+}
+.fab.fa-facebook-f {
+    color: #3B5998;
+}
+.fab.fa-twitter {
+    color: #55ACEE;
+}
+.fab.fa-linkedin-in {
+    color: #007AB9;
+}
+@media (min-width: 768px) {
+header .navbar-brand h5 {
+    font-size: var(--font-default);
+}
+header .nav-link {
+    font-size: 12px;
+}
+}
+
+@media (min-width: 992px) {
+header .navbar-brand img {
+    width: 80px;
+    margin-right: 10px;
+}
+/*header .navbar-brand h5 {
+    font-size: var(--font-h5);
+}*/
+header .navbar-nav li {
+    margin-left: 10px;
+}
+header .nav-link {
+    font-size: var(--font-default);
+}
+}
+
+@media (min-width:1200px) {}
+
+@media (min-width: 1440px) {}
+
+@media (min-width: 1680px) {}
+
+@media (min-width:1920px) {}
